@@ -24,6 +24,9 @@ class LoginView(TokenObtainPairView): # Use TokenObtainPairView for login
     pass # No need to customize, it provides default token obtain logic
     # Login is handled by JWT TokenObtainPairView (urls.py)
 
+
+
+
 # class RegisterUserAPIView(APIView):
 #     """Create User for authentication."""
 #     permission_classes = [permissions.AllowAny]

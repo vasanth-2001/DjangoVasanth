@@ -1,24 +1,50 @@
 # user/serializers.py
 from rest_framework import serializers
 from django.contrib.auth import get_user_model
+from django.contrib.auth.password_validation import validate_password
 
 User = get_user_model()
 
 class UserSerializer(serializers.ModelSerializer):
-    password = serializers.CharField(write_only=True, required=True, style={'input_type': 'password'})
-    firstName = serializers.CharField(write_only=True, required=True) # Accept firstName from frontend
-    emailId = serializers.EmailField(write_only=True, required=True)   # Accept emailId from frontend
+    username = serializers.CharField(required=False, allow_blank=True, write_only=True) # Add username, allow blank initially
+    password = serializers.CharField(write_only=True, required=True, validators=[validate_password], style={'input_type': 'password'})
+    cPassword = serializers.CharField(write_only=True, required=True, style={'input_type': 'password'})
+    firstName = serializers.CharField(required=True, source='first_name')  # Correct source to 'first_name'
+    emailId = serializers.EmailField(required=True, source='email')      # Correct source to 'email'
 
     class Meta:
         model = User
-        fields = ('id', 'username', 'email', 'password', 'firstName', 'emailId') # Include firstName, emailId in fields
-        extra_kwargs = {'password': {'write_only': True, 'style': {'input_type': 'password'}}}
+        fields = ('id', 'username', 'email', 'password', 'cPassword', 'firstName', 'emailId')
+        extra_kwargs = {'password': {'write_only': True, 'style': {'input_type': 'password'}},
+                        'cPassword': {'write_only': True, 'style': {'input_type': 'password'}}}
+
+    def validate(self, data):
+        if data['password'] != data['cPassword']:
+            raise serializers.ValidationError("Passwords do not match.")
+        return data
 
     def create(self, validated_data):
-        validated_data['username'] = validated_data.pop('firstName') # Map firstName to username
-        validated_data['email'] = validated_data.pop('emailId')     # Map emailId to email
-        user = User.objects.create_user(**validated_data)
+        validated_data.pop('cPassword')
+
+        # Generate username - ensure it's always created and unique
+        if 'username' not in validated_data or not validated_data['username']:
+            base_username = validated_data.get('firstName', 'user') + validated_data.get('email', '').split('@')[0]
+            username = base_username
+            suffix = 1
+            while User.objects.filter(username=username).exists():
+                username = f"{base_username}{suffix}"
+                suffix += 1
+            validated_data['username'] = username
+
+        user = User.objects.create_user(**validated_data)  # Corrected line: Removed redundant username=...
         return user
+
+    def update(self, instance, validated_data): # Add update method for completeness
+        instance.first_name = validated_data.get('firstName', instance.first_name) # Map firstName to first_name
+        instance.email = validated_data.get('emailId', instance.email)          # Map emailId to email
+        instance.set_password(validated_data.get('password', instance.password))
+        instance.save()
+        return instance
 # class RegisterSerializer(serializers.ModelSerializer):
 #     """RegisterSerializer to create user."""
 #     email = serializers.EmailField(
