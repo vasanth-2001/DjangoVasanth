@@ -1,0 +1,33 @@
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .room-details {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .room-image {
+    width: 50%;
+    border-radius: 10px;
+  }
+  
+  .room-info {
+    flex: 1;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  ul {
+    list-style-type: square;
+  }
+  
+  .btn {
+    padding: 10px 15px;
+  }
+  

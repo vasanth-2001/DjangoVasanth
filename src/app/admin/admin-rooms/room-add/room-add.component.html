@@ -1,0 +1,33 @@
+
+<div class="form-container">
+  <h3>Add New Room</h3>
+
+  <input type="text" [(ngModel)]="newRoom.title" placeholder="Title" />
+  <input type="number" [(ngModel)]="newRoom.price" placeholder="Price" />
+  
+  <select [(ngModel)]="newRoom.type">
+    <option value="inn">Inn</option>
+    <option value="villa">Villa</option>
+    <option value="hotel">Hotel</option>
+    <option value="apartment">Apartment</option>
+  </select>
+
+  <select [(ngModel)]="newRoom.availability">
+    <option value="available">Available</option>
+    <option value="booked">Booked</option>
+  </select>
+
+  <input type="text" [(ngModel)]="newRoom.imageUrl" placeholder="Image URL" />
+  <textarea [(ngModel)]="newRoom.description" placeholder="Description"></textarea>
+
+  <select [(ngModel)]="newRoom.city">
+    <option value="ahemdabad">Ahemdabad</option>
+    <option value="chennai">Chennai</option>
+    <option value="delhi">Delhi</option>
+  </select>
+
+  <div class="form-actions">
+    <button (click)="saveRoom()">Save</button>
+    <button (click)="cancelAdd()" class="cancel-btn">Cancel</button>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+<div class="container mt-5">
+    <h1 class="text-center">Book {{ room.title }}</h1>
+  
+    <div class="booking-form">
+      <form (ngSubmit)="onbookRoom()" #bookingForm="ngForm">
+        <div class="form-group">
+          <label for="checkIn">Check-in Date:</label>
+          <input type="date" id="checkIn" class="form-control" required [(ngModel)]="checkIn" name="checkIn">
+        </div>
+  
+        <div class="form-group">
+          <label for="checkOut">Check-out Date:</label>
+          <input type="date" id="checkOut" class="form-control" required [(ngModel)]="checkOut" name="checkOut">
+        </div>
+  
+        <div class="form-group">
+          <label for="guests">Number of Guests:</label>
+          <input type="number" id="guests" class="form-control" required [(ngModel)]="guests" name="guests">
+        </div>
+
+        <div class="form-group">
+          <label for="amount">Total Amount:</label>
+        </div>
+  
+        <button type="submit" class="btn btn-success mt-3" [disabled]="!bookingForm.form.valid">Book Now</button>
+      </form>
+    </div>
+  </div>

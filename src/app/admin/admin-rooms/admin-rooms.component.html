@@ -1,0 +1,162 @@
+<!-- 
+
+<div class="container">
+    <h2>Manage Rooms</h2>
+    <button class="add-btn" (click)="addRoom()">+ Add Room</button>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Price ($)</th>
+          <th>Available</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let room of rooms">
+          <td>{{ room.id }}</td>
+          <td>{{ room.name }}</td>
+          <td>{{ room.type }}</td>
+          <td>{{ room.price }}</td>
+          <td>{{ room.available ? 'Yes' : 'No' }}</td>
+          <td>
+            <button (click)="editRoom(room)">Edit</button>
+            <button (click)="deleteRoom(room.id)" class="delete-btn">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table> -->
+
+    <!-- Add / Edit Room Form -->
+    <!-- <div *ngIf="isAdding || isEditing" class="form-container">
+      <h3>{{ isEditing ? 'Edit Room' : 'Add Room' }}</h3>
+      <label>Room Name:</label>
+      <input type="text" [(ngModel)]="newRoom.name" />
+
+      <label>Room Type:</label>
+      <select [(ngModel)]="newRoom.type">
+        <option value="Deluxe">Deluxe</option>
+        <option value="Suite">Suite</option>
+        <option value="Standard">Standard</option>
+      </select>
+
+      <label>Price:</label>
+      <input type="number" [(ngModel)]="newRoom.price" />
+
+      <label>Available:</label>
+      <input type="checkbox" [(ngModel)]="newRoom.available" />
+
+      <div class="form-actions">
+        <button (click)="saveRoom()">Save</button>
+        <button (click)="cancelEdit()" class="cancel-btn">Cancel</button>
+      </div>
+    </div>
+</div> -->
+
+
+<!-- 
+<div class="container">
+    <h2>Manage Rooms</h2>
+    <button class="add-btn" (click)="addRoom()">+ Add Room</button> -->
+    <!-- <button class="add-btn" (click)="navigateToForm()">+ Add Room</button> -->
+<!--   
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Type</th>
+          <th>Price ($)</th>
+          <th>Availability</th>
+          <th>Image URL</th>
+          <th>Description</th>
+          <th>City</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let room of rooms">
+          <td>{{ room.id }}</td>
+          <td>{{ room.title }}</td>
+          <td>{{ room.price }}</td>
+          <td>{{ room.type }}</td>
+          <td>{{ room.availability }}</td>
+          <td>{{ room.imageUrl }}</td>
+          <td>{{ room.description }}</td>
+          <td>{{ room.city }}</td>
+          <td>
+            <button (click)="editRoom(room)">Edit</button> -->
+            <!-- <button (click)="navigateToForm(room.id)">Edit</button> -->
+            <!-- <button (click)="deleteRoom(room.id)" class="delete-btn">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <div *ngIf="isAdding || isEditing" class="form-container">
+      <h3>{{ isEditing? 'Edit Room': 'Add Room' }}</h3>
+      <input type="text" [(ngModel)]="newRoom.title" placeholder="Title" />
+      <select [(ngModel)]="newRoom.type">
+        <option value="inn">Inn</option>
+        <option value="villa">Villa</option>
+        <option value="hotel">Hotels</option>
+        <option value="apartment">Apartment</option>
+      </select>
+      <input type="number" [(ngModel)]="newRoom.price" placeholder="Price" />
+      <select [(ngModel)]="newRoom.availability">
+        <option value="available">Available</option>
+        <option value="booked">Booked</option>
+      </select>
+      <input type="text" [(ngModel)]="newRoom.imageUrl" placeholder="Image URL" />
+      <textarea [(ngModel)]="newRoom.description" placeholder="Description"></textarea>
+      <input type="text" [(ngModel)]="newRoom.city" placeholder="City" />
+      <div class="form-actions">
+        <button (click)="saveRoom()">Save</button>
+        <button (click)="cancelEdit()" class="cancel-btn">Cancel</button>
+      </div>
+    </div>
+  </div>
+  
+   -->
+
+
+   <div class="container">
+    <h2>Manage Rooms</h2>
+    <button class="add-btn" (click)="navigateToAddRoom()">+ Add Room</button>
+  
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Type</th>
+          <th>Price ($)</th>
+          <th>Availability</th>
+          <th>ImageUrl</th>
+          <th>Description</th>
+          <th>City</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let room of rooms">
+          <td>{{ room.id }}</td>
+          <td>{{ room.title }}</td>
+          <td>{{ room.type }}</td>
+          <td>{{ room.price }}</td>
+          <td>{{ room.availability }}</td>
+          <td>{{ room.imageUrl }}</td>
+          <td>{{ room.description }}</td>
+          <td>{{ room.city }}</td>
+          <td>
+            <button class="edit-btn" (click)="navigateToEditRoom(room.id)">Edit</button>
+            <button class="delete-btn" (click)="deleteRoom(room.id)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

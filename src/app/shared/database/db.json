@@ -1,0 +1,183 @@
+{
+  "rooms": [
+    {
+      "id": 1,
+      "title": "The Grand Hotel",
+      "price": 250,
+      "type": "hotel",
+      "availability": "available",
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/11/29/03/53/hotel-1867768_960_720.jpg",
+      "description": "Price: $250 per night",
+      "city": "chennai"
+    },
+    {
+      "id": 2,
+      "title": "Sunrise Resort",
+      "price": 180,
+      "type": "villa",
+      "availability": "available",
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/11/21/15/21/sunset-1846481_960_720.jpg",
+      "description": "Price: $180 per night",
+      "city": "chennai"
+    },
+    {
+      "id": 3,
+      "title": "The Grand Hotel",
+      "price": 250,
+      "type": "hotel",
+      "availability": "available",
+      "imageUrl": "images/delhi.jpg",
+      "description": "Price: $250 per night",
+      "city": "chennai"
+    },
+    {
+      "id": 4,
+      "title": "The Grand Hotel",
+      "price": 250,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/11/29/03/53/hotel-1867768_960_720.jpg",
+      "description": "Price: $250 per night",
+      "city": "chennai"
+    },
+    {
+      "id": 5,
+      "title": "Sunrise Resort",
+      "price": 180,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/11/21/15/21/sunset-1846481_960_720.jpg",
+      "description": "Price: $180 per night",
+      "city": "chennai"
+    },
+    {
+      "id": 6,
+      "title": "Nithish Kumar",
+      "price": 180,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/11/21/15/21/sunset-1846481_960_720.jpg",
+      "description": "Price: $180 per night",
+      "city": "delhi"
+    },
+    {
+      "id": 7,
+      "title": "Blaze",
+      "price": 180,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/11/21/15/21/sunset-1846481_960_720.jpg",
+      "description": "Price: $180 per night",
+      "city": "ahemdabad"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "6b86",
+      "roomId": 1,
+      "title": "The Grand Hotel",
+      "checkIn": "2025-02-07",
+      "checkOut": "2025-02-09",
+      "guests": 3,
+      "totalAmount": 1500
+    },
+    {
+      "id": "3b61",
+      "roomId": 7,
+      "title": "Blaze",
+      "checkIn": "2025-02-06",
+      "checkOut": "2025-02-07",
+      "guests": 1,
+      "totalAmount": 180
+    },
+    {
+      "id": "0999",
+      "roomId": 1,
+      "title": "The Grand Hotel",
+      "checkIn": "2025-02-07",
+      "checkOut": "2025-02-08",
+      "guests": 5,
+      "totalAmount": 1250
+    },
+    {
+      "id": "8adf",
+      "roomId": 7,
+      "userID": "a44c",
+      "title": "Blaze",
+      "checkIn": "2025-02-07",
+      "checkOut": "2025-02-08",
+      "guests": 1,
+      "totalAmount": 180
+    },
+    {
+      "id": "5b90",
+      "roomId": 2,
+      "userID": "a44c",
+      "title": "Sunrise Resort",
+      "checkIn": "2025-02-08",
+      "checkOut": "2025-02-09",
+      "guests": 1,
+      "totalAmount": 180
+    }
+  ],
+  "users": [
+    {
+      "id": "d823",
+      "firstName": "NithishKumar",
+      "emailId": "nithish@gmail.com",
+      "password": "112233"
+    },
+    {
+      "id": "f710",
+      "firstName": "NithishKumar",
+      "emailId": "nithish@gmail.com",
+      "password": "112233"
+    },
+    {
+      "id": "4104",
+      "firstName": "NithishKumar",
+      "emailId": "nithish@gmail.com",
+      "password": "112233"
+    },
+    {
+      "id": "c0ab",
+      "firstName": "NithishKumars",
+      "emailId": "nithish@gmail.coms",
+      "password": "112233"
+    },
+    {
+      "id": "e26c",
+      "firstName": "NithishKumar",
+      "emailId": "nithish@gmail.com",
+      "password": "112233"
+    },
+    {
+      "id": "fbc7",
+      "EmailId": "nithish@gmail.com",
+      "Password": "112233"
+    },
+    {
+      "id": "1743",
+      "EmailId": "nithish@gmail.com",
+      "Password": "1231"
+    },
+    {
+      "id": "a44c",
+      "EmailId": "a",
+      "Password": "a"
+    },
+    {
+      "id": "adb9",
+      "firstName": "Aizen",
+      "emailId": "aizen@gmail.com",
+      "password": "1122",
+      "cPassword": "1122"
+    },
+    {
+      "id": "f6b7",
+      "firstName": "NithishKumar",
+      "emailId": "aizen@gmail.com",
+      "password": "121212",
+      "cPassword": "121212"
+    },
+    {
+      "id": "b253",
+      "firstName": "Mirnal",
+      "emailId": "mirnal@gmail.com",
+      "password": "mirnal",
+      "cPassword": "mirnal"
+    }
+  ]
+}

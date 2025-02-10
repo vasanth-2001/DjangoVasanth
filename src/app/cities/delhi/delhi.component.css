@@ -1,0 +1,118 @@
+.container{
+    display: flex;
+    width: 1000px;
+}
+.delhiDiv{
+  display: flex;
+}
+/* Cards Container */
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    /* background: linear-gradient(-135deg, #c850c0, #4158d0);  */
+    /* min-height: 100vh;  */
+    /* align-items: center; */
+  }
+  
+  /* Card Styling */
+  .card {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: none;
+    background: rgba(255, 255, 255, 0.15); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Glass effect */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Card Image */
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+  }
+  
+  /* Card Body */
+  .card-body {
+    text-align: center;
+    padding: 20px;
+    color: #fff; /* White text for better contrast */
+  }
+  
+  /* Card Title */
+  .card-title {
+    font-weight: 600;
+    color: #fff;
+  }
+  
+  /* Card Text */
+  .card-text {
+    font-size: 14px;
+    color: #f1f1f1;
+  }
+
+  
+/* Buttons */
+.btn {
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    padding: 8px 15px;
+  }
+  
+  .btn-primary {
+    background-color: #ff5e94;
+    border: none;
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background-color: #ff2e72;
+  }
+  
+  .btn-light {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  
+  .btn-light:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  /* filter */
+
+
+  .filter-sidebar {
+    width: 250px;
+    /* background-color: #f4f4f4; */
+    padding: 15px;
+    /* box-shadow: 2px 0 5px rgba(0,0,0,0.1); */
+    margin-top: 63px;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: none;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.filter-sidebar h2 {
+    margin-top: 0;
+}
+
+.filter-group {
+    margin-bottom: 20px;
+}
+
+.filter-group h3 {
+    margin-bottom: 10px;
+}

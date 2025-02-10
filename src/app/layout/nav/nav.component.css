@@ -1,0 +1,202 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navcomps{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.navbarsec {
+  height: 125px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 20px 15px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 20px; 
+}
+
+.nav-links li {
+  list-style: none;
+  margin: 0 12px;
+}
+
+.nav-links li a {
+  position: relative;
+  color: #333;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 6px 0;
+  text-decoration: none;
+}
+
+.nav-links li a:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: #ee07f2;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+}
+
+.nav-links li a:hover:before {
+  width: 100%;
+}
+
+.nav-links li.center a:before {
+  left: 50%;
+  transform: translateX(-50%);
+} */
+
+/*------------------------------------------------------ logo */
+
+/* .logo{
+  width: 65px;
+  height: auto;  
+  position: absolute;
+  margin-top: 22px;
+  margin-left: -40px; */
+  /* margin-left: 20px;  */
+  /* position: fixed; */
+  /* top: 22px;
+  left: 345px; */
+/* }
+
+.imageGlow{
+  box-shadow: 0 0 20px ;
+} */
+
+
+
+
+
+
+/* Basic Reset & Font Import (if not already globally defined) */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap'); */ /* Assuming Poppins is already imported globally */
+
+/* Navigation Bar Container */
+.navbar {
+  background-color: #ffffff; /* White navbar background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 0px 20px; /* Reduced vertical padding, added horizontal */
+  position: sticky; /* Stick to the top on scroll */
+  top: 0;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between; /* Space out logo and links */
+  align-items: center; /* Vertically align items */
+  max-width: 1200px; /* Match dashboard max width if applicable */
+  margin: 0 auto; /* Center within its container */
+  padding: 10px 0; /* Vertical padding inside container */
+}
+
+/* Logo Styling */
+.navbar-brand .logo-link {
+  text-decoration: none; /* Remove underline from logo link */
+  display: flex; /* Ensure logo and text align nicely if text was added */
+  align-items: center;
+}
+
+.navbar-brand .logo {
+  width: 50px; /* Slightly smaller logo */
+  height: auto;
+  transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.navbar-brand .logo:hover {
+  transform: scale(1.1); /* Slight scale up on hover */
+}
+
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  padding: 0; /* Remove padding from ul */
+  margin: 0; /* Remove default margin from ul */
+  list-style: none; /* Remove list bullets */
+}
+
+.nav-item {
+  margin-left: 25px; /* Spacing between nav items */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #495057; /* Dark grey nav link color */
+  font-weight: 500;
+  font-size: 1rem;
+  position: relative; /* For underline animation */
+  padding: 8px 0; /* Add vertical padding */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.nav-link:hover {
+  color: #007bff; /* Primary color on hover */
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #007bff; /* Primary color underline */
+  transition: width 0.4s ease; /* Underline animation */
+}
+
+.nav-link:hover::before {
+  width: 100%; /* Underline expands on hover */
+}
+
+
+/* Logout Link - distinct styling if needed */
+.logout-link {
+  color: #dc3545; /* Reddish color for logout */
+}
+
+.logout-link:hover {
+  color: #c82333; /* Darker red on hover */
+}
+
+
+/* Responsive adjustments (if needed, though navbar is already quite responsive) */
+@media (max-width: 768px) {
+  .navbar-container {
+      flex-direction: column; /* Stack logo and links on smaller screens */
+      align-items: stretch; /* Stretch items to full width */
+  }
+  .navbar-brand {
+      margin-bottom: 10px; /* Add space below logo in stacked layout */
+      text-align: center; /* Center logo */
+  }
+  .nav-links {
+      flex-direction: column; /* Stack nav links vertically */
+      text-align: center; /* Center align links */
+  }
+  .nav-item {
+      margin-left: 0; /* Remove horizontal spacing in stacked layout */
+      margin-top: 10px; /* Add vertical spacing between stacked links */
+  }
+}

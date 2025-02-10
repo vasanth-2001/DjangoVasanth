@@ -1,0 +1,633 @@
+/* @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.body1{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: #f2f2f2;
+}
+.bc{
+  display: flex;
+  justify-content: center;
+}
+.bodycenter {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  background: #ffd2fc;
+  color: #333;
+  padding: 20px;
+  border-radius: 5px;
+  width: fit-content;
+} */
+
+/* Center the search container vertically and horizontally */
+/* .search-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: auto;
+}
+
+/* Style the input fields and the button */
+/* #search-bar, #check-in-date, #check-out-date, #people-selector, #children-selector, #search-button {
+  margin-right: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}  */
+
+/* Ensure the last element does not have a margin-right */
+/* .search-container > *:last-child {
+  margin-right: 0;
+} */
+
+/* Add focus effect to input fields */
+/* #search-bar:focus, #check-in-date:focus, #check-out-date:focus, #people-selector:focus, #children-selector:focus {
+  border-color: #007BFF;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+} */
+
+/* Style the search button */
+/* #search-button {
+  cursor: pointer;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+} */
+
+/* Add hover effect to the search button */
+/* #search-button:hover {
+  background-color: #0056b3;
+} */
+
+/* Style the labels */
+/* .date-container label, .people-container label, .children-container label , .search-cont label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #333;
+} */
+
+/*------------------------------------------------------ cards */
+
+/* Cards Container */
+/* .cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px; */
+  /* background: linear-gradient(-135deg, #c850c0, #4158d0);  */
+  /* min-height: 100vh;  */
+  /* align-items: center; */
+/* } */
+
+/* Card Styling */
+/* .card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border: none;
+  background: rgba(255, 255, 255, 0.15); /* Semi-transparent white */
+  /* backdrop-filter: blur(10px); Glass effect */
+  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); */
+/* } */
+
+/* .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}  */
+
+/* Card Image */
+/* .card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+} */
+
+/* Card Body */
+/* .card-body {
+  text-align: center;
+  padding: 20px;
+  color: #fff; 
+} */
+
+/* Card Title */
+/* .card-title {
+  font-weight: 600;
+  color: #fff;
+} */
+
+/* Card Text */
+/* .card-text {
+  font-size: 14px;
+  color: #f1f1f1;
+} */
+
+/* Buttons */
+/* .btn {
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  padding: 8px 15px;
+}
+
+.btn-primary {
+  background-color: #ff5e94;
+  border: none;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #ff2e72;
+}
+
+.btn-light {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn-light:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+} */
+
+/* Responsive Adjustments */
+/* @media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+} */
+
+/* ------------------------------------titles */
+
+/* .head1{
+  display: flex;
+  justify-content: center;
+  color: white;
+  
+} */
+
+/* Testimonials */
+/* .testimonial {
+  font-style: italic;
+  font-size: 16px;
+  color: #fff;
+} */
+
+/* Newsletter */
+/* .newsletter {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.newsletter input {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.newsletter button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: #007BFF;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: #0056b3;
+} */
+
+
+/* searchresults */
+
+/* .search-results{
+  margin-top: 10px;
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-item{
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+} */
+
+
+/* Dashboard Container */
+.dashboard-container {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background-color: #f8f9fa; /* Light grey background */
+  padding: 20px;
+  border-radius: 8px;
+  margin: 3px auto;
+  width: 100%;
+  /* max-width: 1200px; Limit width for larger screens */
+}
+
+/* Section Titles */
+.section-title {
+  color: #343a40; /* Dark grey for titles */
+  border-bottom: 2px solid #dee2e6; /* Light border */
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  text-align: center; /* Center align section titles */
+}
+
+.section {
+  margin-bottom: 40px; /* Spacing between sections */
+}
+
+/*-------------------- Search Section --------------------*/
+.search-section {
+  background: linear-gradient(135deg, #e0f7fa, #b2ebf2); /* Light blue gradient */
+  padding: 40px 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  background-color: transparent;
+}
+
+.search-header h2 {
+  color: #007bff; /* Primary color for main heading */
+  margin-bottom: 10px;
+}
+
+.search-header p {
+  color: #495057; /* Slightly darker text for paragraph */
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.search-form {
+  display: flex; /* Changed to Flexbox Layout */
+  flex-direction: row; /* Arrange items in a row */
+    align-items: flex-start; /* Align items to the start of the container */
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Spacing between input groups */
+    max-width: 1200px; /* Increased max-width to accommodate all inputs in one line */
+    margin: 0 auto; /* Center the form */
+    padding: 0 20px; /* Add horizontal padding to the form */
+    background-color: transparent; /* Added: Make search form background transparent */
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left; /* Align labels to the left */
+}
+
+.input-group label {
+  margin-bottom: 5px;
+  color: #343a40;
+  font-weight: 500;
+}
+
+.input-group input, #search-button {
+  padding: 10px 12px;
+  border-radius: 5px;
+  border: 1px solid #ced4da; /* Light grey border */
+  font-size: 0.9rem;
+}
+
+.input-group input:focus, #search-button:focus {
+  outline: none;
+  border-color: #007bff; /* Focus border color */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Focus shadow */
+}
+
+#search-button {
+  background-color: #007BFF; /* Primary Color: Soft Blue for button */
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 10px 25px; /* Increased horizontal padding to make button wider */
+  font-size: 1rem;
+  border-radius: 5px; /* Ensure button has rounded corners */
+  align-self: flex-end; /* Align button to the end of the row */
+  height: fit-content; /* Adjust button height to fit content */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+#search-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Date and People Input Groups - for specific styling if needed */
+/* .date-input, .people-input {} */
+
+
+/*-------------------- Card Grid Layout for Sections --------------------*/
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive card columns */
+  gap: 25px;
+  justify-content: center; /* Center cards in grid */
+}
+
+
+/*-------------------- Destination Cards --------------------*/
+.destination-card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  background-color: white;
+}
+
+.destination-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.destination-card .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.destination-card .card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.destination-card .card-title {
+  color: #343a40;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.destination-card .card-text {
+  color: #6c757d; /* Muted text color */
+  font-size: 0.9rem;
+}
+
+.destination-card .btn-primary {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.destination-card .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+
+/*-------------------- Featured Hotel Cards --------------------*/
+.hotel-card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.hotel-card .card-img-top {
+  height: 220px; /* Slightly taller for hotel cards */
+  object-fit: cover;
+}
+
+.hotel-card .card-body {
+  padding: 20px;
+}
+
+.hotel-card .card-title {
+  color: #343a40;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.hotel-card .card-text {
+  color: #6c757d;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.hotel-card .btn-secondary {
+  background-color: #28a745; /* Green for 'Book Now' */
+  border: none;
+  color: white;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hotel-card .btn-secondary:hover {
+  background-color: #1e7e34; /* Darker green on hover */
+}
+
+
+/*-------------------- Testimonial Cards --------------------*/
+.testimonial-card {
+  background-color: #fff;
+  border-left: 3px solid #ffc107; /* Yellow accent bar */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.testimonial-card .card-body {
+  padding: 0; /* Override card-body padding */
+}
+
+.testimonial-text {
+  font-style: italic;
+  color: #495057;
+  margin-bottom: 15px;
+}
+
+.testimonial-author {
+  font-weight: bold;
+  color: #343a40;
+  text-align: right; /* Align author to the right */
+}
+
+
+/*-------------------- Blog Cards --------------------*/
+.blog-grid {
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Wider blog cards */
+}
+
+.blog-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.blog-card .card-body {
+  padding: 25px;
+}
+
+.blog-card .card-title {
+  color: #343a40;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.blog-card .card-text {
+  color: #6c757d;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.blog-card .btn-light {
+  background-color: transparent;
+  color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.blog-card .btn-light:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+
+/*-------------------- Newsletter Section --------------------*/
+.newsletter-section {
+  background-color: #fff;
+  padding: 40px 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.newsletter p {
+  color: #495057;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.newsletter-form {
+  display: flex;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.newsletter-form input {
+  padding: 10px 12px;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #ced4da;
+  border-right: none; /* Remove right border to attach button */
+  flex-grow: 1; /* Input takes up available space */
+  font-size: 0.9rem;
+}
+
+.newsletter-form input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.newsletter-form button {
+  background-color: #28a745; /* Green for newsletter subscribe */
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #1e7e34;
+}
+
+
+/*-------------------- Search Results Section --------------------*/
+.search-results {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.search-results .section-title {
+  text-align: left; /* Align search results title to left */
+  margin-bottom: 15px;
+}
+
+.search-item {
+  padding: 15px;
+  border-bottom: 1px dashed #dee2e6; /* Dashed line to separate items */
+}
+
+.search-item:last-child {
+  border-bottom: none; /* Remove border from last item */
+}
+
+.search-item p {
+  margin-bottom: 0;
+  color: #495057;
+}
+
+.search-item p strong {
+  color: #343a40; /* Strong name text */
+}
+
+
+/*-------------------- Responsive Design --------------------*/
+@media (max-width: 768px) {
+  .search-form {
+      grid-template-columns: 1fr; /* Stack form elements on smaller screens */
+  }
+  .card-grid, .blog-grid {
+      grid-template-columns: 1fr; /* Stack cards on smaller screens */
+  }
+  .newsletter-form {
+      flex-direction: column; /* Stack newsletter form elements */
+  }
+  .newsletter-form input {
+      border-radius: 5px 5px 0 0; /* Round top corners when stacked */
+      border-right: 1px solid #ced4da; /* Add right border back */
+      border-bottom: none; /* Remove bottom border to attach button */
+  }
+  .newsletter-form button {
+      border-radius: 0 0 5px 5px; /* Round bottom corners when stacked */
+  }
+}

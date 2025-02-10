@@ -1,0 +1,60 @@
+.form-container {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  textarea {
+    height: 80px;
+    resize: vertical;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  button:first-child {
+    background: #28a745;
+    color: white;
+  }
+  
+  .cancel-btn {
+    background: #dc3545;
+    color: white;
+  }
+  

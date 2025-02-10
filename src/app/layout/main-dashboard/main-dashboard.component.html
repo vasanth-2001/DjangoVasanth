@@ -1,0 +1,284 @@
+<!-- <div>
+  <div class="bc">
+    <div class="bodycenter">
+      <div class="search-container">
+        <div class="search-cont">
+          <label for="search-bar">Search</label>
+          <input type="text" id="search-bar" placeholder="Search for rooms..." [(ngModel)]='searchParams.place'>
+        </div>
+        <div class="date-container">
+          <label for="check-in-date">Check-in</label>
+          <input type="date" id="check-in-date" [(ngModel)]="searchParams.checkIn">
+        </div>
+        <div class="date-container">
+          <label for="check-out-date">Check-out</label>
+          <input type="date" id="check-out-date" [(ngModel)]="searchParams.checkOut">
+        </div>
+        <div class="people-container">
+          <label for="people-selector">Adults</label>
+          <input type="number" id="people-selector" [(ngModel)]="searchParams.adults" min="1" max="10">
+        </div>
+        <div class="children-container">
+          <label for="children-selector">Children</label>
+          <input type="number" id="children-selector" [(ngModel)]="searchParams.children" min="0" max="10">
+        </div>
+        <button id="search-button" (click)="searchRooms()">Search</button>
+      </div>
+    </div>
+  </div>
+  <div class="search-results" *ngIf="searchResults.length > 0">
+    <h3>Search Results:</h3>
+    <div *ngFor="let room of searchResults" class="search-item">
+      <p><strong> {{room.name}} </strong> - {{room.location}} - ${{room.price}}/night </p>
+    </div>
+  </div>
+</div>
+<br><br>
+<h1 class="head1">Trending Destinations</h1>
+<div class="cards container mt-5 ">
+  <div class="card" style="width: 18rem;">
+    <img src="images/chennai.jpg" class="card-img-top" alt="...">
+    <div class="card-body mt-4">
+      <h5 class="card-title">Chennai</h5>
+      <small>
+        <p class="card-text" style="color: white;">Tamil Nadu</p>
+      </small>
+      <br>
+      <a href="#" routerLink="chennai" class="btn btn-primary">More Info</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="images/delhi.jpg" class="card-img-top" alt="...">
+    <div class="card-body mt-4">
+      <h5 class="card-title">Mumbai</h5>
+      <small>
+        <p class="card-text" style="color: white;">Maharashtra</p>
+      </small>
+      <br>
+      <a href="#" routerLink="delhi" class="btn btn-primary">More Info</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="images/ahemdabad.jpg" class="card-img-top" alt="...">
+    <div class="card-body mt-4">
+      <h5 class="card-title">Ahemdabad</h5>
+      <small>
+        <p class="card-text" style="color: white;">Mumbai</p>
+      </small>
+      <br>
+      <a href="#" routerLink="ahemdabad" class="btn btn-primary">More Info</a>
+    </div>
+  </div>
+</div>
+
+<div class="container"> -->
+
+  <!-- Featured Hotels Section -->
+  <!-- <h1 class="head1" style="margin-top: 40px; margin-bottom: 30px;">Featured Hotels</h1>
+  <div class="cards">
+    <div class="card">
+      <img src="images/chennai.jpg" class="card-img-top" alt="Hotel 1">
+      <div class="card-body">
+        <h5 class="card-title">Grand Palace Hotel</h5>
+        <p class="card-text">Luxury hotel in New York with sea view.</p>
+        <a href="#" class="btn btn-primary">Book Now</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/chennai.jpg" class="card-img-top" alt="Hotel 2">
+      <div class="card-body">
+        <h5 class="card-title">Skyline Resort</h5>
+        <p class="card-text">Top-rated resort in the heart of Dubai.</p>
+        <a href="#" class="btn btn-primary">Book Now</a>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Customer Testimonials Section -->
+  <!-- <h1 class="head1" style="margin-top: 40px; margin-bottom: 30px;">Customer Testimonials</h1>
+  <div class="cards">
+    <div class="card">
+      <div class="card-body">
+        <p class="testimonial">"Amazing stay! The hotel was clean, and the staff was very welcoming."</p>
+        <h5 class="card-title">- John Doe</h5>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <p class="testimonial">"The best booking experience ever! Highly recommended."</p>
+        <h5 class="card-title">- Sarah Williams</h5>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Travel Blog Section -->
+  <!-- <h1 class="head1" style="margin-top: 40px; margin-bottom: 30px;">Travel Tips & Guides</h1>
+  <div class="cards">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">How to Find the Best Hotel Deals</h5>
+        <p class="card-text">Learn tips on how to get the best prices for your stay.</p>
+        <a href="#" class="btn btn-light">Read More</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Top 10 Destinations for 2025</h5>
+        <p class="card-text">Explore the most popular travel locations for the upcoming year.</p>
+        <a href="#" class="btn btn-light">Read More</a>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Newsletter Signup -->
+  <!-- <h1 class="head1" style="margin-top: 40px; margin-bottom: 30px;">Stay Updated</h1>
+  <div class="newsletter">
+    <p>Subscribe to get the latest deals and travel updates.</p>
+    <input type="email" placeholder="Enter your email">
+    <button class="btn btn-primary">Subscribe</button>
+  </div>
+
+</div>
+<br><br><br> -->
+
+<div class="dashboard-container">
+  <div class="search-section">
+      <div class="search-body">
+          <div class="search-header">
+              <h2>Find Your Perfect Room</h2>
+              <p>Search from a wide range of rooms in top destinations.</p>
+          </div>
+          <div class="search-form">
+              <div class="input-group">
+                  <label for="search-bar">Destination</label>
+                  <input type="text" id="search-bar" placeholder="City or Location" [(ngModel)]='searchParams.place'>
+              </div>
+              <div class="input-group date-input">
+                  <label for="check-in-date">Check-in Date</label>
+                  <input type="date" id="check-in-date" [(ngModel)]="searchParams.checkIn">
+              </div>
+              <div class="input-group date-input">
+                  <label for="check-out-date">Check-out Date</label>
+                  <input type="date" id="check-out-date" [(ngModel)]="searchParams.checkOut">
+              </div>
+              <div class="input-group people-input">
+                  <label for="adults-selector">Adults</label>
+                  <input type="number" id="adults-selector" [(ngModel)]="searchParams.adults" min="1" max="10">
+              </div>
+              <div class="input-group people-input">
+                  <label for="children-selector">Children</label>
+                  <input type="number" id="children-selector" [(ngModel)]="searchParams.children" min="0" max="10">
+              </div>
+              <button id="search-button" (click)="searchRooms()">Search Rooms</button>
+          </div>
+      </div>
+  </div>
+
+  <div class="trending-destinations section">
+      <h2 class="section-title">Trending Destinations</h2>
+      <div class="card-grid">
+          <div class="card destination-card">
+              <img src="images/chennai.jpg" class="card-img-top" alt="Chennai">
+              <div class="card-body">
+                  <h5 class="card-title">Chennai</h5>
+                  <p class="card-text">Tamil Nadu</p>
+                  <a href="#" routerLink="chennai" class="btn btn-primary">Explore Chennai</a>
+              </div>
+          </div>
+          <div class="card destination-card">
+              <img src="images/delhi.jpg" class="card-img-top" alt="Delhi">
+              <div class="card-body">
+                  <h5 class="card-title">Delhi</h5>
+                  <p class="card-text">National Capital Region</p>
+                  <a href="#" routerLink="delhi" class="btn btn-primary">Explore Delhi</a>
+              </div>
+          </div>
+          <div class="card destination-card">
+              <img src="images/ahemdabad.jpg" class="card-img-top" alt="Ahmedabad">
+              <div class="card-body">
+                  <h5 class="card-title">Ahmedabad</h5>
+                  <p class="card-text">Gujarat</p>
+                  <a href="#" routerLink="ahemdabad" class="btn btn-primary">Explore Ahmedabad</a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="featured-hotels section">
+      <h2 class="section-title">Featured Hotels</h2>
+      <div class="card-grid">
+          <div class="card hotel-card">
+              <img src="images/hotel1.jpg" class="card-img-top" alt="Grand Palace Hotel">
+              <div class="card-body">
+                  <h5 class="card-title">Grand Palace Hotel</h5>
+                  <p class="card-text">Luxury hotel with stunning views.</p>
+                  <a href="#" class="btn btn-secondary">Book Now</a>
+              </div>
+          </div>
+          <div class="card hotel-card">
+              <img src="images/hotel2.jpg" class="card-img-top" alt="Skyline Resort">
+              <div class="card-body">
+                  <h5 class="card-title">Skyline Resort</h5>
+                  <p class="card-text">Top-rated resort for relaxation.</p>
+                  <a href="#" class="btn btn-secondary">Book Now</a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="customer-testimonials section">
+      <h2 class="section-title">Customer Testimonials</h2>
+      <div class="card-grid">
+          <div class="card testimonial-card">
+              <div class="card-body">
+                  <p class="testimonial-text">"Amazing stay! The hotel was clean, and the staff was very welcoming."</p>
+                  <h5 class="testimonial-author">- John Doe</h5>
+              </div>
+          </div>
+          <div class="card testimonial-card">
+              <div class="card-body">
+                  <p class="testimonial-text">"The best booking experience ever! Highly recommended."</p>
+                  <h5 class="testimonial-author">- Sarah Williams</h5>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="travel-blog section">
+      <h2 class="section-title">Travel Tips & Guides</h2>
+      <div class="card-grid blog-grid">
+          <div class="card blog-card">
+              <div class="card-body">
+                  <h5 class="card-title">How to Find the Best Hotel Deals</h5>
+                  <p class="card-text">Learn tips on how to get the best prices for your stay.</p>
+                  <a href="#" class="btn btn-light">Read More</a>
+              </div>
+          </div>
+          <div class="card blog-card">
+              <div class="card-body">
+                  <h5 class="card-title">Top 10 Destinations for 2025</h5>
+                  <p class="card-text">Explore the most popular travel locations for the upcoming year.</p>
+                  <a href="#" class="btn btn-light">Read More</a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="newsletter-section section">
+      <h2 class="section-title">Stay Updated</h2>
+      <div class="newsletter">
+          <p>Subscribe to get the latest deals and travel updates.</p>
+          <div class="newsletter-form">
+              <input type="email" placeholder="Enter your email">
+              <button class="btn btn-primary">Subscribe</button>
+          </div>
+      </div>
+  </div>
+
+  <div class="search-results" *ngIf="searchResults.length > 0">
+      <h3 class="section-title">Search Results:</h3>
+      <div class="search-item" *ngFor="let room of searchResults">
+          <p><strong> {{room.name}} </strong> - {{room.location}} - ${{room.price}}/night </p>
+      </div>
+  </div>
+</div>

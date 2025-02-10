@@ -1,0 +1,34 @@
+<!-- <div class="navcomps">
+<div class="imageGlo">
+    <img src="images/logo.png" alt="..." class="logo">
+</div>
+<div class="navbarsec">
+    <ul class="nav-links">
+        <li class="center"><a routerLink="">Dashboard</a></li>
+        <li class="center"><a routerLink="feedback">Feedback</a></li>
+        <li class="center"><a routerLink="cities">Cities</a></li>
+        <li class="center" *ngIf = "isLoggedIn"><a routerLink="mybookings">My Bookings</a></li>
+        <li class="center" *ngIf = "!isLoggedIn"><a routerLink="login">Login</a></li>
+        <li class="center" *ngIf = "!isLoggedIn"><a routerLink="signup">SignUp</a></li>
+        <li class="center" *ngIf = "isLoggedIn"><a href="" (click)="logout()">Logout</a></li>
+    </ul>
+</div>
+</div> -->
+<nav class="navbar">
+    <div class="navbar-container">
+        <div class="navbar-brand">
+            <a routerLink="/" class="logo-link">
+                <img src="images/logo.png" alt="Logo" class="logo">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li class="nav-item"><a routerLink="/" class="nav-link">Dashboard</a></li>
+            <li class="nav-item"><a routerLink="feedback" class="nav-link">Feedback</a></li>
+            <li class="nav-item"><a routerLink="cities" class="nav-link">Cities</a></li>
+            <li class="nav-item" *ngIf="isLoggedIn"><a routerLink="mybookings" class="nav-link">My Bookings</a></li>
+            <li class="nav-item" *ngIf="!isLoggedIn"><a routerLink="login" class="nav-link">Login</a></li>
+            <li class="nav-item" *ngIf="!isLoggedIn"><a routerLink="signup" class="nav-link">Sign Up</a></li>
+            <li class="nav-item" *ngIf="isLoggedIn"><a href="javascript:void(0)" (click)="logout()" class="nav-link logout-link">Logout</a></li>
+        </ul>
+    </div>
+</nav>

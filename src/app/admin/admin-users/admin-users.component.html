@@ -1,0 +1,62 @@
+<!-- 
+<div class="admin-dashboard"></div>
+
+<div class="sidebar">
+  <h2>Admin Panel</h2>
+  <ul>
+    <li (click)="navigateTo('users')"><i class="fas fa-users"></i> Manage Users</li>
+    <li (click)="navigateTo('rooms')"><i class="fas fa-bed"></i> Manage Rooms</li>
+    <li (click)="navigateTo('bookings')"><i class="fas fa-calendar-alt"></i> View Bookings</li>
+  </ul>
+</div>
+
+  -->
+
+
+
+
+
+
+<div class="container">
+  <h2>Manage Users</h2>
+
+  <button class="add-btn" (click)="addUser()">+ Add User</button>
+
+  <!-- User Form for Adding/Editing -->
+  <div *ngIf="isAdding || isEditing" class="user-form">
+    <h3>{{ isEditing ? 'Edit User' : 'Add User' }}</h3>
+    <input type="text" [(ngModel)]="newUser.username" placeholder="Username" required />
+    <input type="email" [(ngModel)]="newUser.email" placeholder="Email" required />
+    <select [(ngModel)]="newUser.role">
+      <option value="Admin">Admin</option>
+      <option value="User">User</option>
+    </select>
+    <button (click)="saveUser()">{{ isEditing ? 'Update' : 'Save' }}</button>
+    <button class="cancel-btn" (click)="cancelEdit()">Cancel</button>
+  </div>
+
+  <!-- User Table -->
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Role</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.id }}</td>
+        <td>{{ user.username }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.role }}</td>
+        <td>
+          <button (click)="editUser(user)">Edit</button>
+          <button (click)="deleteUser(user.id)" class="delete-btn">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

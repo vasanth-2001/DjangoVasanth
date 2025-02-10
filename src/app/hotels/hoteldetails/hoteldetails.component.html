@@ -1,0 +1,28 @@
+<div class="container mt-5">
+    <h1 class="text-center">{{ room.title }}</h1>
+  
+    <div class="room-details">
+      <img [src]="room.imageUrl" class="room-image" [alt]="room.title">
+  
+      <div class="room-info">
+        <h2>Room Details</h2>
+        <p><strong>Price:</strong> ${{ room.price }} per night</p>
+        <p>{{ room.description }}</p>
+  
+        <h3>Amenities</h3>
+        <ul>
+          <li>Free Wi-Fi</li>
+          <li>Air Conditioning</li>
+          <li>Room Service</li>
+          <li>Swimming Pool</li>
+        </ul>
+  
+        <h3>Location</h3>
+        <p>Located in the heart of the city with easy access to major attractions.</p>
+  
+        <button class="btn btn-success mt-3" (click)="onbookNow()" >Book Now</button>
+        <!-- <button class="btn btn-secondary mt-3" (click)="goBack()">Back to List</button> -->
+      </div>
+    </div>
+  </div>
+  

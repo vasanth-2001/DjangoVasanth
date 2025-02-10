@@ -1,0 +1,32 @@
+<div class="bodycenter">
+    <div class="wrapper">
+      <div class="title">
+        Login Form
+      </div>
+      <form action="#">
+        <div class="field">
+          <input type="text" name="EmailId" [(ngModel)]="loginObj.EmailId" required>
+          <label>Email Address</label>
+        </div>
+        <div class="field">
+          <input type="password" name="Password" [(ngModel)]="loginObj.Password" required>
+          <label>Password</label>
+        </div>
+        <div class="content">
+          <div class="checkbox">
+            <input type="checkbox" id="remember-me">
+            <label for="remember-me">Remember me</label>
+          </div>
+        </div>
+        <div class="field">
+          <input type="submit" (click)="onLogin()" value="Login">
+        </div>
+        <div class="signup-link">
+          Not a member? <a href="#" [routerLink]="['/signup']">Signup now</a>
+        </div>
+      </form>
+      <div class="admin-login-link">
+      <a href="#" (click)="navigateToAdmin()">Admin Login</a>
+    </div>
+    </div>
+  </div>

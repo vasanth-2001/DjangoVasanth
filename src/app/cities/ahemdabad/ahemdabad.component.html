@@ -1,0 +1,41 @@
+<div class="ahemdabadDiv">
+  <div class="filter-sidebar" *ngIf="isStandalone">
+      <h2>Filter Options</h2>
+
+      <div class="filter-group">
+          <h3>Property Type</h3>
+          <label><input type="checkbox" value="inn" (change)="onPropertyTypeChange($event)"> Inn</label><br>
+          <label><input type="checkbox" value="villa" (change)="onPropertyTypeChange($event)"> Villa</label><br>
+          <label><input type="checkbox" value="hotel" (change)="onPropertyTypeChange($event)"> Hotels</label><br>
+          <label><input type="checkbox" value="apartment" (change)="onPropertyTypeChange($event)"> Apartment</label>
+      </div>
+
+      <div class="filter-group">
+          <h3>Price Range</h3>
+          <label><input type="radio" name="price" value="low" (change)="onPriceRangeChange($event)"> Low</label><br>
+          <label><input type="radio" name="price" value="medium" (change)="onPriceRangeChange($event)"> Medium</label><br>
+          <label><input type="radio" name="price" value="high" (change)="onPriceRangeChange($event)"> High</label>
+      </div>
+
+      <div class="filter-group">
+          <h3>Availability</h3>
+          <label><input type="checkbox" value="available" (change)="onAvailabilityChange($event)"> Available</label><br>
+          <label><input type="checkbox" value="booked" (change)="onAvailabilityChange($event)"> Booked</label>
+      </div>
+  </div>
+  <div class="container">
+    <div class="cards container mt-5">
+      <div *ngFor="let card of filteredCards" class="card" style="width: 18rem;">
+        <img [src]="card.imageUrl" class="card-img-top" [alt]="card.title">
+        <div class="card-body mt-4">
+          <h5 class="card-title">{{ card.title }}</h5>
+          <small>
+            <p class="card-text" style="color: white;">{{ card.description }}</p>
+          </small>
+          <br>
+          <button (click)="viewDetails(card)" class="btn btn-primary">More Info</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
